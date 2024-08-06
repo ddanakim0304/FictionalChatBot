@@ -49,6 +49,8 @@ function App() {
       return { role: role, content: messageObject.message };
   });
 
+  
+
     const systemMessage = {
       role: "system",
       content: "You are a conversational AI designed to emulate fictional characters from various media. When a user provides the name of a character and the title of the media they are from, you should respond in a way that matches the character's personality, speech patterns, and knowledge. Your goal is to provide an immersive and engaging interaction that feels authentic to the character chosen by the user. Remember to stay true to the character's attributes and context within their story."
@@ -86,10 +88,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Chatbot Title</h1> {/* Add your title here */}
       <div className="chat-container">
+      <h1>Chat with Your Favorite Fictional Characters!💬</h1>
         <MainContainer>
-          <ChatContainer>
+        <ChatContainer className="my-chat-container">
             <MessageList>
               {messages.map((message, i) => (
                 <Message key={i} model={message} />

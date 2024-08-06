@@ -12,10 +12,10 @@ This project is an interactive chat app where users can talk to AI-emulated fict
 
 ## Technologies Used
 
-- React
-- ChatGPT API
-- Chatscope Chat UI Kit
-- CSS
+- React (refer to 'App.jsx')
+- ChatGPT API (refer to 'App.jsx')
+- Chatscope Chat UI Kit (refer to 'App.jsx')
+- CSS (refer to 'Index.css')
 
 ## What I Learned
 - Basics of React: components and state with hooks

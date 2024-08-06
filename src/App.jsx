@@ -92,11 +92,13 @@ function App() {
       <h1>Chat with Your Favorite Fictional Characters!💬</h1>
         <MainContainer>
         <ChatContainer className="my-chat-container">
-            <MessageList>
+            <MessageList
+              scrollBehavior="smooth" 
+              typingIndicator={typing ? <TypingIndicator content="ChatGPT is typing" /> : null}
+            >
               {messages.map((message, i) => (
                 <Message key={i} model={message} />
               ))}
-              {typing && <TypingIndicator content="ChatGPT is typing..." />}
             </MessageList>
             <MessageInput placeholder="Type message here" onSend={handleSend} />
           </ChatContainer>
